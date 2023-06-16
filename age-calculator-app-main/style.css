@@ -38,6 +38,10 @@
     padding:2px;
   }
 
+  input:hover{
+    border-color: hsl(259, 100%, 65%);
+  }
+
   .input-text{
     padding-left: 15px;
     font-size: 15px;
@@ -68,6 +72,10 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+  }
+
+  .btn-submit:hover{
+    background-color: black;
   }
 
   svg {
