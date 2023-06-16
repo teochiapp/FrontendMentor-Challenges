@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <div class="form-container">
+        <div class="form-row">
+          <label for="day">DAY</label>
+          <input type="text" value="24" id="yourDays" class="input-text">
+        </div>
+        <div class="form-row">
+          <label for="month">MONTH</label>
+          <input type="text" value="03" id="yourMonths" class="input-text">
+        </div>
+        <div class="form-row">
+          <label for="year">YEAR</label>
+          <input type="text" value="2001" id="yourYears" class="input-text">
+      </div>
+    
+  
+      <button class="btn-submit" onclick="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="33" viewBox="0 0 58 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </button>
+      
+    </div>
+    <hr>
+    <div class="results-container">
+      <p id="yearsResult" class="p-results"><span class="span-number">38</span> years</p>
+      <p id="monthsResult" class="p-results"><span class="span-number">3</span> months</p>
+      <p id="daysResult" class="p-results"><span class="span-number">26</span> days</p>
+    </div>
+      
+    </form>
+    </div>
+  </div>
+  <script>
+  
+    function obtainValue() {
+        
+
+        var yourYears = document.getElementById("yourYears");
+        var valueYears = yourYears.value;
+
+        var yourMonths = document.getElementById("yourMonths");
+        var valueMonths = parseInt(yourMonths.value);
+
+        var yourDays = document.getElementById("yourDays");
+        var valueDays = yourDays.value;
+
+
+        let years;
+        let months;
+        let days;
+        var date = new Date();
+        years = date.getFullYear();
+        months = date.getMonth();
+        days = date.getDay();
+
+        yearsResult = years - valueYears;
+        monthsResult = months + valueMonths;
+        daysResult = 365 - valueDays;
+        console.log(yearsResult + " years " + monthsResult + " months " + daysResult + " days ");
+        document.getElementById("yearsResult").innerHTML = yearsResult;
+        document.getElementById("monthsResult").innerHTML = monthsResult;
+        document.getElementById("daysResult").innerHTML = daysResult;
+      }
+    
+  </script>
+
+</body>
+
+</html>
