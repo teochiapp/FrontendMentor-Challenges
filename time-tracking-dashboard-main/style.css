@@ -1,0 +1,172 @@
+body{
+    background-color:#0D1323;
+    font-family: "Rubik";
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .grid-layout {
+    height: 360px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 185px 185px 185px 185px;
+    justify-content: stretch;
+    
+
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+
+  .caja {
+    border: 1px solid black;
+    border-radius: 14px;
+    position: relative;
+    padding-left: 20px;
+    margin: 10px;
+  }
+
+  .content {
+    background-color: #23224C;
+    background-image: url("images/icon-ellipsis.svg");
+    background-repeat: no-repeat;
+    background-position-x: 130px;
+    background-position-y: 25px;
+    background-size: 18px;
+    position: absolute; /* Establece el posicionamiento absoluto del div */
+    bottom: 0; /* Envía el div al fondo */
+    left: 0; /* Ajusta la posición del div a la izquierda */
+    right: 0; /* Ajusta la posición del div a la derecha */
+    border-radius: 12px;
+    padding-left: 20px;
+  }
+
+
+  .Main {
+    grid-row: 1 / span 2;
+    background-color: hsl(246, 80%, 60%);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: stretch;
+  }
+
+  .header{
+    padding-top: 10px;
+    border-radius: 12px;
+  }
+
+  .selector{
+    background-color: #23224C;
+    position: absolute; /* Establece el posicionamiento absoluto del div */
+    bottom: 0; /* Envía el div al fondo */
+    left: 0; /* Ajusta la posición del div a la izquierda */
+    right: 0; /* Ajusta la posición del div a la derecha */
+    padding-left: 20px;
+    font-weight: 400px;
+    border-radius: 13px;
+  }
+
+  .Work{
+    background-color: hsl(15, 100%, 70%);
+    background-image: url("images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-size: 25%;
+  }
+  
+
+  
+  .Exercise{
+    background-color: hsl(145, 58%, 55%);
+    background-image: url("images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-position-y: 10px;
+    background-size: 25%;
+  }
+
+  
+  .Play{
+    background-color: hsl(195, 74%, 62%);
+    background-image: url("images/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-size: 25%;
+  }
+
+  
+  .Social{
+    background-color: hsl(264, 64%, 52%);
+    background-image: url("images/icon-social.svg");
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-size: 25%;
+  }
+
+  
+  .Study{
+    background-color: hsl(348, 100%, 68%);
+    background-image: url("images/icon-study.svg");
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-size: 25%;
+  }
+
+  
+  .SelfCare{
+    background-color: hsl(43, 84%, 65%);
+    background-image: url("images/icon-self-care.svg");
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-size: 25%;
+  }
+
+.title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+.hours{
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom:7px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+
+.text-name {
+  display: inline-block;
+  margin-top: 10px; 
+  font-size: 23px;
+  font-weight: 400;
+
+}
+
+h6{
+    margin-top:0;
+    font-weight: 300;
+    color: #ffffffbd;
+}
+
+.thumbnail {
+    width: 50px; /* Establece el ancho del contenedor thumbnail */
+    height: 50px; /* Establece la altura del contenedor thumbnail */
+    overflow: hidden; /* Oculta cualquier contenido que exceda las dimensiones del contenedor */
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 23px;
+  }
+  
+  .thumbnail img {
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 100%; /* Establece la altura de la imagen al 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  }
+
+  .not-active {
+    color: #ffffff63;
+  }
