@@ -1,0 +1,161 @@
+body{
+    font-family: 'Space Grotesk';
+}
+
+.container {
+    width: auto;
+    height: 900px;
+    width: 1440px;
+    background-color: #fff;
+}
+
+.form-container{
+    position: relative;
+    right: -830px;
+    top: -628px;
+    color: black;
+    font-family: 'Space Grotesk';
+    letter-spacing: 1px;
+    font-size: 14px;
+    width: 345px;
+  }
+  
+  .form-container input {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    display: block;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 20px;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    border-radius: 6px;
+    border: 1px hsl(279, 6%, 55%) solid;
+    margin-bottom: 15px;
+  }
+
+   .form-container label {
+    padding-bottom: 6px;
+    font-weight: 500;
+    font-family: "Space Grotesk";
+    text-align:left;
+    display: block;
+}
+
+.form-container input:hover{
+    border-color:purple;
+}
+
+::placeholder { /* Estilos para navegadores que siguen el estándar */
+    /* Propiedades CSS para el marcador de posición */
+    color: hsl(279, 6%, 55%);
+  }
+
+  .form-group-cvc{
+    display: block;
+    position: relative;
+    top: -77px;
+    left: 160px;
+  }
+
+  .btn-confirm{
+    background: hsl(278, 68%, 11%);
+    position: relative;
+    top: -60px;
+    display: inline-block;
+    font-family: 'Space Grotesk';
+    width: 100%;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 16px 32px;
+    color: #fff;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: all .3s ease-in;
+  }
+
+
+
+
+.card-front-container {
+    position: relative;
+    top: -722px;
+    left: 150px;
+    z-index: 0;
+}
+
+.card-back-container {
+    position: relative;
+    top: -682px;
+    left: 252px;
+}
+svg {
+  position: relative;
+  top: -171px;
+  right: 410px;
+  z-index: 1;
+}
+
+svg circle .completed {
+    position: relative;
+    top: -421px;
+    right: 410px;
+  }
+
+.card-number{
+  display: inline-block;
+  position: relative;
+  top: -86px;
+  right: 500px;
+  z-index: 1;
+  color: white;
+  font-family: 'Space Grotesk';
+  font-style: medium;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.card-name{
+    display: inline-block;
+    position: relative;
+    top: -36px;
+    right: 789px;
+    z-index: 1;
+    color: white;
+    font-family: 'Space Grotesk';
+    font-size: 14px;
+    letter-spacing: 1px;
+      
+  }
+
+  .card-expiration{
+    display: inline-block;
+    position: relative;
+    left: 220px;
+  }
+
+  .card-password{
+    display: inline-block;
+    position: relative;
+    right: 80px;
+    top: -118px;
+    color: white;
+    font-family: 'Space Grotesk';
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+
+.attribution {
+  position: relative;
+  top: -480px;
+  color: white;
+  padding-left: 10px;
+}
+
+.attribution a{
+    color: white;
+  }

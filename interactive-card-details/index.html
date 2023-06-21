@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+    <img src="images/bg-main-desktop.png" alt="bg-image" style="margin-top:-10px; margin-left:-10px;">
+    <div class="card-front-container">
+      <img class="card-front-img" src="images/bg-card-front.png" alt="card-front">
+      <svg class="card-logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+      <div class="card-number">1234 5678 9123 0000</div>
+      <div class="card-name">TEO CHIAPPERO<span class="card-expiration">24/06</span></div>
+    </div>
+
+    <div class="card-back-container">
+      <img class="card-back-img" src="images/bg-card-back.png" alt="card-back">
+      <span class="card-password">123</span>
+    </div>
+
+ 
+  </div>
+
+ 
+    <div class="form-container">
+      <form id="form-data" action="">
+        <div class="form-group">
+          <label for="name">CARDHOLDER NAME</label>
+          <input type="text" placeholder="e.g. Teo Chiappero">
+        </div>
+        <div class="form-group">
+          <label for="name">CARD NUMBER</label>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        <div class="form-group" style="margin-top: 15px">
+          <label for="name">Exp. Date (MM/YY)</label>
+          <input type="text" placeholder="MM" style="display: inline-block; width: 30px;"> <input type="text" placeholder="YY" style="display: inline-block; width: 30px;">
+          
+        </div>
+        <div class="form-group-cvc" style="display: block;">
+          <label for="name" style="padding-left: 4px;">CVC</label>
+          <input type="text" placeholder="YY" style=" width: 140px;">
+        </div>
+
+        <button class="btn-confirm" onclick="">Confirm</button>
+       
+      </form>
+
+      <form id="form-confirmed" style="display: none;">
+        <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle class="completed" cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs>
+        </svg>
+        <h3>Thank you!</h3>
+        <p>We've added your card details</p>
+        <button>Continue</button>
+      </form>
+    </div>
+
+    
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Teo Chiappero</a>.
+  </div>
+  
+  
+
+</body>
+</html>
