@@ -153,9 +153,10 @@ h6{
 }
 
 .thumbnail {
-    width: 50px; /* Establece el ancho del contenedor thumbnail */
-    height: 50px; /* Establece la altura del contenedor thumbnail */
-    overflow: hidden; /* Oculta cualquier contenido que exceda las dimensiones del contenedor */
+width: 50px; /* Establece el ancho del contenedor thumbnail */
+height: 50px; /* Establece la altura del contenedor thumbnail */
+
+overflow: hidden; /* Oculta cualquier contenido que exceda las dimensiones del contenedor */
     border: 2px solid #fff;
     border-radius: 50%;
     margin-bottom: 23px;
